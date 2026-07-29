@@ -1,0 +1,11 @@
+HospitalKey,HospitalName,City,HospitalType,BedCapacity
+1,Lagos Teaching Hospital,Lagos,Private,250
+2,Abuja Teaching Hospital,Abuja,Private,250
+3,Port Harcourt Teaching Hospital,Port Harcourt,Public,1000
+4,Kano Teaching Hospital,Kano,Public,500
+5,Enugu Teaching Hospital,Enugu,Private,100
+6,Ibadan Teaching Hospital,Ibadan,Teaching,1000
+7,Benin Teaching Hospital,Benin,Teaching,250
+8,Jos Teaching Hospital,Jos,Public,1000
+9,Uyo Teaching Hospital,Uyo,Private,100
+10,Kaduna Teaching Hospital,Kaduna,Teaching,250

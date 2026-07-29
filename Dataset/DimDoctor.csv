@@ -1,0 +1,31 @@
+DoctorKey,DoctorName,Gender,Specialty,YearsExperience
+1,Dr. Chinedu Okafor,Female,Radiology,20
+2,Dr. Amina Bello,female,Oncology,10
+3,Dr. Tunde Adeyemi,Female,ENT,15
+4,Dr. Kelechi Nwosu,Female,ICU,15
+5,Dr. Funke Adebayo,Female,Cardiology,3
+6,Dr. Musa Ibrahim, MALE ,Nephrology,10
+7,Dr. Ngozi Eze,Male,General Surgery,5
+8,Dr. Seyi Ogunleye,Female,Cardiology,10
+9,Dr. Ifeanyi Obi,female,Nephrology,10
+10,Dr. Zainab Abdullahi,Male,Orthopedics,15
+11,Dr. Emeka Okoye,female,Neurology,20
+12,Dr. Bisi Oladipo, MALE ,Cardiology,5
+13,Dr. Yakubu Garba,Male,Neurology,3
+14,Dr. Uche Nnamdi,female,General Surgery,15
+15,Dr. Halima Sani, MALE ,Radiology,10
+16,Dr. Gbenga Ojo,Female,General Surgery,20
+17,Dr. Chioma Ndukwe,Male,ENT,5
+18,Dr. Olumide Akinola,Male,Pediatrics,5
+19,Dr. Esther Danjuma,Male,Neurology,15
+20,Dr. Ibrahim Lawal,female,ICU,10
+21,Dr. Nkiru Eze,Female,Orthopedics,5
+22,Dr. Dayo Alabi,female,Oncology,8
+23,Dr. Aminu Usman,female,ICU,10
+24,Dr. Blessing Okon, MALE ,ENT,10
+25,Dr. Samuel Etim, MALE ,Cardiology,3
+26,Dr. Ruth Nwankwo,Female,ENT,3
+27,Dr. Peter Ekanem,female,Neurology,15
+28,Dr. Hadiza Sule,Female,Nephrology,15
+29,Dr. Victor Anozie, MALE ,ICU,15
+30,Dr. Tolulope Ajayi,Male,General Surgery,20
