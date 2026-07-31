@@ -31,7 +31,7 @@ The raw dataset was deliberately messy 15+ distinct issues were identified and r
 
 
 ## Data Quality & Cleaning
-|# ||Table | Issue | Rows Affected | Resoultion
+|# |Table | Issue | Rows Affected | Resoultion
 |---|---|---|---|---|
 |1| FactPatientVisits |2 exact duplicate rows (duplicate VisitID) | 2 | 	Removed, keep first
 |2| FactPatientVisits |VisitDate in 3 mixed formats: YYYY-MM-DD, MM-DD-YYYY, DD/MM/YYYY | 40,000 | Detected format by pattern, parsed to a single date type
