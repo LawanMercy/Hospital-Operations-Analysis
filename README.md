@@ -29,6 +29,15 @@ The raw dataset was deliberately messy 15+ distinct issues were identified and r
 - Duplicate dimension records from trailing whitespace (150 raw diagnosis rows collapsed to 18 real diagnoses; 20 raw insurance rows collapsed to 5 real providers)
 - Inconsistent text casing across gender, Yes/No fields, and provider names
 
+
+## Data Quality & Cleaning
+|Table | Issue | Rows Affected | Resoultion
+|---|---|---|---|
+| 	FactPatientVisits | 2 exact duplicate rows (duplicate VisitID) | 2 | 	Removed, keep first
+| `docs/PowerBI_Build_Guide.md` | Power Query M code, DAX measure library, star schema design, and dashboard build spec |
+| `presentation/Hospital_Operations_Analytics.pptx` | Stakeholder-facing summary of findings and recommendations |
+| `screenshots/` | Page-by-page dashboard preview (below) |
+
 Full details, row counts, and the exact Power Query M code used for each fix are documented in [`docs/PowerBI_Build_Guide.md`](docs/PowerBI_Build_Guide.md).
 
 ## Data Model
