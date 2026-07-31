@@ -4,7 +4,7 @@ An end-to-end Business Intelligence project analyzing 5 years of multi-hospital 
 
 **Network:** 10 hospitals · 40,000 patient visits · Jan 2021 – Dec 2025
 
-![Executive Summary](https://github.com/LawanMercy/Hospital-Operations-Analysis/blob/main/Resources/Page%201%20-%20Executive%20Summary.png)
+![Dashboard Collage](https://github.com/LawanMercy/Hospital-Operations-Analysis/blob/main/Resources/Page%201%20-%20Executive%20Summary.png)
 
 ## Business Problem
 
@@ -39,14 +39,15 @@ Star schema: one fact table (`FactPatientVisits`) with 7 dimensions (Date, Docto
 ## Report Pages
 
 ### Executive Summary
+![Hospital Performance](https://github.com/LawanMercy/Hospital-Operations-Analysis/blob/main/Resources/Page%201%20-%20Executive%20Summary.png)
 Network-wide KPIs with YoY context, revenue trend, satisfaction-vs-target gauge, and emergency/scheduled visit split.
 
 ### Hospital Performance
-![Hospital Performance](screenshots/02-hospital-performance.png)
+![Hospital Performance](https://github.com/LawanMercy/Hospital-Operations-Analysis/blob/main/Resources/Page%201%20-%20Executive%20Summary.png)
 Revenue and patient volume by hospital, wait-time comparison, and a full hospital detail breakdown with drill-through to department- and diagnosis-level detail per hospital.
 
 ### Clinical Performance
-![Clinical Performance](screenshots/03-clinical-performance.png)
+![Clinical Performance](https://github.com/LawanMercy/Hospital-Operations-Analysis/blob/main/Resources/Page%203%20-Clinical%20Performance.png).
 Top diagnoses by volume, length-of-stay by department, emergency visit rate by department, and readmission rate trend.
 
 ### Doctor's Performance
