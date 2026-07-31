@@ -67,4 +67,4 @@ Full recommendations are in the presentation deck.
 
 ## Author
 
-**Opeyemi Mercy Lawan** — Business Data Analyst
+[Opeyemi Mercy Lawan](https://www.linkedin.com/in/opeyemi-mercy-lawan-81a048276/)
