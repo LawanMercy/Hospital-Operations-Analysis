@@ -17,11 +17,11 @@ A healthcare group operating multiple hospitals had five years of raw operationa
 | `Hospital_Operations_Analytics.pbix` | The full Power BI report — data model, DAX measures, 4 dashboard pages |
 | `docs/PowerBI_Build_Guide.md` | Power Query M code, DAX measure library, star schema design, and dashboard build spec |
 | `presentation/Hospital_Operations_Analytics.pptx` | Stakeholder-facing summary of findings and recommendations |
-| `screenshots/` | Page-by-page report previews (below) | Dashboard Collage |
+| `screenshots/` | Page-by-page dashboard preview (below) |
 
 ## Data Quality & Cleaning
 
-The raw dataset was deliberately messy — 15+ distinct issues were identified and resolved in Power Query, including:
+The raw dataset was deliberately messy 15+ distinct issues were identified and resolved in Power Query, including:
 
 - Dates stored in 3 different mixed formats across rows
 - Costs stored as text with thousands-separators and sign-entry errors (negative values)
@@ -33,6 +33,7 @@ Full details, row counts, and the exact Power Query M code used for each fix are
 
 ## Data Model
 
+![Star Schema](https://github.com/LawanMercy/Hospital-Operations-Analysis/blob/main/Resources/Star%20Schema.png)
 Star schema: one fact table (`FactPatientVisits`) with 7 dimensions (Date, Doctor, Department, Diagnosis, Hospital, Insurance, PatientType), all single-direction 1:* relationships — no ambiguous filter paths.
 
 ## Report Pages
