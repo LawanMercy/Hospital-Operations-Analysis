@@ -4,7 +4,7 @@ An end-to-end Business Intelligence project analyzing 5 years of multi-hospital 
 
 **Network:** 10 hospitals · 40,000 patient visits · Jan 2021 – Dec 2025
 
-![Executive Summary](screenshots/01-executive-summary.png)
+![Executive Summary]([screenshots/01-executive-summary.png](https://github.com/LawanMercy/Hospital-Operations-Analysis/blob/main/Resources/Page%201%20-%20Executive%20Summary.png))
 
 ## Business Problem
 
