@@ -45,7 +45,7 @@ Network-wide KPIs with YoY context, revenue trend, satisfaction-vs-target gauge,
 Revenue and patient volume by hospital, wait-time comparison, and a full hospital detail breakdown with drill-through to department- and diagnosis-level detail per hospital.
 
 ### Clinical Performance
-![Clinical Performance](https://github.com/LawanMercy/Hospital-Operations-Analysis/blob/main/Resources/Page%203%20-Clinical%20Performance.png).
+![Clinical Performance](https://github.com/LawanMercy/Hospital-Operations-Analysis/blob/main/Resources/Page%203%20-Clinical%20Performance.png)
 Top diagnoses by volume, length-of-stay by department, emergency visit rate by department, and readmission rate trend.
 
 ### Doctor's Performance
