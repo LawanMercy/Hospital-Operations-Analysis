@@ -4,6 +4,8 @@ An end-to-end Business Intelligence project built to mirror how analytics actual
 
 This isn't a "clean CSV in, pretty chart out" exercise. The dataset was deliberately built with the kind of mess real operational systems produce - mixed date formats, silent placeholder values standing in for missing data, duplicate records hiding behind trailing whitespaces. The project walks the full path from PostgreSQL through Power Query, DAX, and data modeling to a 4-page report and stakeholder presentation.
 
+Link to the iteractive dashboard https://shorturl.at/lIrNL
+
 **Network:** 10 hospitals · 40,000 patient visits · January 2021 – December 2025
 
 ## Business Problem
