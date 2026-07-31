@@ -17,7 +17,7 @@ A healthcare group operating multiple hospitals had five years of raw operationa
 | `Hospital_Operations_Analytics.pbix` | The full Power BI report — data model, DAX measures, 4 dashboard pages |
 | `docs/PowerBI_Build_Guide.md` | Power Query M code, DAX measure library, star schema design, and dashboard build spec |
 | `presentation/Hospital_Operations_Analytics.pptx` | Stakeholder-facing summary of findings and recommendations |
-| `screenshots/` | Page-by-page report previews (below) |
+| `screenshots/` | Page-by-page report previews (below) | Dashboard Collage |
 
 ## Data Quality & Cleaning
 
