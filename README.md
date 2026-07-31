@@ -1,6 +1,6 @@
 # Hospital Operations Analytics — Power BI Capstone
 ![Dashboard Collage](https://github.com/LawanMercy/Hospital-Operations-Analysis/blob/main/Resources/Dashboard%20Collage.png)
-An end-to-end Business Intelligence project analyzing 5 years of multi-hospital operational data — from raw, error-riddled source files through a governed star-schema model to a 4-page interactive Power BI report.
+An end-to-end Business Intelligence project analyzing 5 years of multi-hospital operational data from raw, error-riddled source files through a governed star-schema model to a 4-page interactive Power BI report.
 
 **Network:** 10 hospitals · 40,000 patient visits · Jan 2021 – Dec 2025
 
