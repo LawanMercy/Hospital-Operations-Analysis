@@ -42,11 +42,11 @@ The raw dataset was deliberately messy 15+ distinct issues were identified and r
 |15| DimDoctor |Specialty missing|10|Filled with "Unknown"
 
 ## Power Query M Code (per query)
-- DimDiagnosis — trims, Title Cases, dedupes 150 rows down to 18 canonical diagnoses, regenerates surrogate key
-- DimInsurance — same pattern, dedupes 20 rows to 5 real providers, appends a "Not Recorded" member before re-indexing
-- DimDoctor — trims name, standardizes Gender casing, fills missing Specialty with "Unknown", converts word-numbers ("Thirty") to numeric YearsExperience
-- DimHospital / DimDepartment / DimPatientType — defensive trim only (these three were already clean)
-- FactPatientVisits — the full 6-step pipeline: dedupe on VisitID → parse the 3 mixed date formats by pattern → strip comma formatting and force costs positive → null out the three sentinel values (25 / 1500 / 365) → standardize Yes/No casing → fill missing InsuranceKey → remap DiagnosisKey/InsuranceKey to the regenerated dimension keys via a two-step merge
+- DimDiagnosis: trims, Title Cases, dedupes 150 rows down to 18 canonical diagnoses, regenerates surrogate key
+- DimInsurance: same pattern, dedupes 20 rows to 5 real providers, appends a "Not Recorded" member before re-indexing
+- DimDoctor: trims name, standardizes Gender casing, fills missing Specialty with "Unknown", converts word-numbers ("Thirty") to numeric YearsExperience
+- DimHospital / DimDepartment / DimPatientType: defensive trim only (these three were already clean)
+- FactPatientVisits: the full 6-step pipeline: dedupe on VisitID → parse the 3 mixed date formats by pattern → strip comma formatting and force costs positive → null out the three sentinel values (25 / 1500 / 365) → standardize Yes/No casing → fill missing InsuranceKey → remap DiagnosisKey/InsuranceKey to the regenerated dimension keys via a two-step merge
 
 
 ## Data Model
