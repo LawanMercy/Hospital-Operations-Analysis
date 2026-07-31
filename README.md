@@ -1,8 +1,10 @@
 # Hospital Operations Analytics — Power BI Capstone
 ![Dashboard Collage](https://github.com/LawanMercy/Hospital-Operations-Analysis/blob/main/Resources/Dashboard%20Collage.png)
-An end-to-end Business Intelligence project analyzing 5 years of multi-hospital operational data from raw, error-riddled source files through a governed star-schema model to a 4-page interactive Power BI report.
+An end-to-end Business Intelligence project built to mirror how analytics actually gets delivered inside a healthcare organization: raw, imperfect data landed in a relational database, profiled and cleaned by hand, modeled into a governed star schema, and shipped as a polished, interactive report an executive could open on day one and trust.
 
-**Network:** 10 hospitals · 40,000 patient visits · Jan 2021 – Dec 2025
+This isn't a "clean CSV in, pretty chart out" exercise. The dataset was deliberately built with the kind of mess real operational systems produce - mixed date formats, silent placeholder values standing in for missing data, duplicate records hiding behind trailing whitespaces. The project walks the full path from PostgreSQL through Power Query, DAX, and data modeling to a 4-page report and stakeholder presentation.
+
+**Network:** 10 hospitals · 40,000 patient visits · January 2021 – December 2025
 
 ## Business Problem
 
@@ -65,7 +67,7 @@ Full recommendations are in the presentation deck, click here to access it
 
 ## Tools Used
 
-`Power BI Desktop` · `Power Query (M)` · `DAX` · `Star Schema Modeling`
+`PostgreSQL`, `Power BI Desktop` · `Power Query (M)` · `DAX` · `Star Schema Modeling`
 
 ## Author
 
