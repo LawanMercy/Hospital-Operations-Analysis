@@ -38,19 +38,19 @@ Star schema: one fact table (`FactPatientVisits`) with 7 dimensions (Date, Docto
 
 ### Executive Summary
 ![Executive Summary](https://github.com/LawanMercy/Hospital-Operations-Analysis/blob/main/Resources/Page%201%20-%20Executive%20Summary.png)
-Network-wide KPIs with YoY context, revenue trend, satisfaction-vs-target gauge, and emergency/scheduled visit split.
+A provided network-wide performance visibility across all 10 hospitals from January 2021 to December 2025 period. The core KPIs: Total Revenue (₦1.27B), Total Patients (40,000), Readmission Rate (66.7%), and Average Satisfaction Score (5.23/10) are presented with year-over-year variance to distinguish structural trends from period-specific fluctuation. The five-year revenue trend indicates a stable but non-compounding growth pattern, with a ~6% dip in 2023 that recovered by 2024–25. The satisfaction gauge benchmarks current performance against a defined target (7/10), and the emergency-versus-scheduled visit split (50/50) quantifies unplanned-care load at the network level. This page is designed as the primary decision-support surface for leadership, prioritizing directional clarity over granular detail.
 
 ### Hospital Performance
 ![Hospital Performance](https://github.com/LawanMercy/Hospital-Operations-Analysis/blob/main/Resources/Page%202%20-%20Hospital%20Performance.png)
-Revenue and patient volume by hospital, wait-time comparison, and a full hospital detail breakdown with drill-through to department- and diagnosis-level detail per hospital.
+This page evaluates the comparative performance across the 10-hospital network on revenue, patient volume, and average wait time. Analysis indicates a high degree of operational parity: revenue variance across sites is approximately 8% (₦122.7M–₦132.5M), and average wait times cluster within a 3-minute band (46–49 minutes) network-wide. This suggests that performance differentials are attributable to case mix rather than site-level operational inefficiency, a materially different conclusion than would follow from a wider spread. The hospital detail table quantifies revenue, patient volume, and average length of stay per site, with drill-through enabled to isolate department- and diagnosis-level activity for any selected hospital, supporting root-cause investigation beyond the summary view.
 
 ### Clinical Performance
 ![Clinical Performance](https://github.com/LawanMercy/Hospital-Operations-Analysis/blob/main/Resources/Page%203%20-Clinical%20Performance.png)
-Top diagnoses by volume, length-of-stay by department, emergency visit rate by department, and readmission rate trend.
+This page assesses clinical and operational load: diagnosis volume, length of stay by department, emergency visit rate by department, and readmission rate trend over time. The most consequential finding on this page is a network-wide 30-day readmission rate of 66.7%, which exceeds typical industry benchmarks (approximately 15–20%) by a substantial margin. This metric is flagged for clinical audit rather than presented as a settled conclusion, since it may reflect either a genuine care-quality issue or a definitional inconsistency in how readmissions are logged at intake. Department-level emergency visit rates show limited variance (48–52% across departments), indicating emergency load is distributed evenly rather than concentrated in specific service lines.
 
 ### Doctor's Performance
 ![Doctor Performance](https://github.com/LawanMercy/Hospital-Operations-Analysis/blob/main/Resources/Page%204%20-%20Doctor's%20Performance.png)
-Top performers by revenue, patient-volume-vs-satisfaction scatter, and a full doctor scorecard with conditional formatting.
+This page provides individual-physician-level performance data: revenue generated, patient volume, and satisfaction scores, supported by a ranked top-10 view and a volume-versus-satisfaction scatter to test whether caseload correlates with care quality. Satisfaction scores remain tightly clustered (5.18–5.36) across physicians with substantially different patient volumes, indicating that higher caseload is not, on this data, associated with a measurable decline in patient-reported satisfaction. The scorecard table applies conditional formatting across revenue and satisfaction fields to surface performance patterns at a glance, supporting workload-balancing and staffing decisions at the individual level.
 
 ## Key Findings
 
