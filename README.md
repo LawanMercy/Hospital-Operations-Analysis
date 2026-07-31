@@ -4,8 +4,6 @@ An end-to-end Business Intelligence project analyzing 5 years of multi-hospital 
 
 **Network:** 10 hospitals · 40,000 patient visits · Jan 2021 – Dec 2025
 
-![Dashboard Collage](https://github.com/LawanMercy/Hospital-Operations-Analysis/blob/main/Resources/Page%201%20-%20Executive%20Summary.png)
-
 ## Business Problem
 
 A healthcare group operating multiple hospitals had five years of raw operational data but no unified way to monitor revenue, patient experience, or clinical performance. This project turns that raw data into a governed data model and an interactive report management can act on directly.
