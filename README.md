@@ -52,7 +52,7 @@ The raw dataset was deliberately messy 15+ distinct issues were identified and r
 ## Data Model
 
 ![Star Schema](https://github.com/LawanMercy/Hospital-Operations-Analysis/blob/main/Resources/Star%20Schema.png)
-Star schema: one fact table (`FactPatientVisits`) with 7 dimensions (Date, Doctor, Department, Diagnosis, Hospital, Insurance, PatientType), all single-direction 1:* relationships — no ambiguous filter paths.
+Star schema: one fact table (`FactPatientVisits`) with 7 dimensions (Date, Doctor, Department, Diagnosis, Hospital, Insurance, PatientType), all single-direction 1:* relationships there's no ambiguous filter paths.
 
 ## Report Pages
 
