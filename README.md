@@ -49,7 +49,7 @@ Revenue and patient volume by hospital, wait-time comparison, and a full hospita
 Top diagnoses by volume, length-of-stay by department, emergency visit rate by department, and readmission rate trend.
 
 ### Doctor's Performance
-![Doctor Performance](screenshots/04-doctor-performance.png)
+![Doctor Performance](https://github.com/LawanMercy/Hospital-Operations-Analysis/blob/main/Resources/Page%204%20-%20Doctor's%20Performance.png)
 Top performers by revenue, patient-volume-vs-satisfaction scatter, and a full doctor scorecard with conditional formatting.
 
 ## Key Findings
