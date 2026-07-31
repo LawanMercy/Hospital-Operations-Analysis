@@ -45,7 +45,9 @@ The raw dataset was deliberately messy 15+ distinct issues were identified and r
 |10| FactPatientVisits |InsuranceKey missing|1,941|Mapped to new "Not Recorded" member
 |11| DimDiagnosis |150 rows but only 18 real diagnoses (trailing-space duplicates, e.g. "Ulcer" vs "Ulcer  ")|132 duplicate rows|Trimmed, Title Cased, deduplicated; Fact table remapped to canonical keys
 |12| DimInsurance|20 rows but only 5 real providers (surrogate-key duplicates)|15 duplicate rows|Deduplicated to 5 + added "Not Recorded"; Fact table remapped
-|13| DimDiagnosis |150 rows but only 18 real diagnoses (trailing-space duplicates, e.g. "Ulcer" vs "Ulcer  ")|132 duplicate rows|Trimmed, Title Cased, deduplicated; Fact table remapped to canonical keys
+|13| DimDoctor |Gender inconsistent casing/spacing (" MALE ", "FEMALE")|100|Trimmed, standardized to Male/Female
+|14| DimDoctor |YearsExperience stored as text, includes word values ("Thirty")|100|Converted to whole number
+|15| DimDoctor |Specialty missing|10|Filled with "Unknown"
 
 Full details, row counts, and the exact Power Query M code used for each fix are documented in [`docs/PowerBI_Build_Guide.md`](docs/PowerBI_Build_Guide.md).
 
