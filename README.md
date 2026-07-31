@@ -37,11 +37,11 @@ Star schema: one fact table (`FactPatientVisits`) with 7 dimensions (Date, Docto
 ## Report Pages
 
 ### Executive Summary
-![Hospital Performance](https://github.com/LawanMercy/Hospital-Operations-Analysis/blob/main/Resources/Page%201%20-%20Executive%20Summary.png)
+![Executive Summary](https://github.com/LawanMercy/Hospital-Operations-Analysis/blob/main/Resources/Page%201%20-%20Executive%20Summary.png)
 Network-wide KPIs with YoY context, revenue trend, satisfaction-vs-target gauge, and emergency/scheduled visit split.
 
 ### Hospital Performance
-![Hospital Performance](https://github.com/LawanMercy/Hospital-Operations-Analysis/blob/main/Resources/Page%201%20-%20Executive%20Summary.png)
+![Hospital Performance](https://github.com/LawanMercy/Hospital-Operations-Analysis/blob/main/Resources/Page%202%20-%20Hospital%20Performance.png)
 Revenue and patient volume by hospital, wait-time comparison, and a full hospital detail breakdown with drill-through to department- and diagnosis-level detail per hospital.
 
 ### Clinical Performance
