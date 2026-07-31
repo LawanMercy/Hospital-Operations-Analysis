@@ -31,14 +31,21 @@ The raw dataset was deliberately messy 15+ distinct issues were identified and r
 
 
 ## Data Quality & Cleaning
-|Table | Issue | Rows Affected | Resoultion
-|---|---|---|---|
-| FactPatientVisits | 2 exact duplicate rows (duplicate VisitID) | 2 | 	Removed, keep first
-| FactPatientVisits | VisitDate in 3 mixed formats: YYYY-MM-DD, MM-DD-YYYY, DD/MM/YYYY | 40,000 | Detected format by pattern, parsed to a single date type
-| FactPatientVisits |	TreatmentCost / MedicationCost stored as text with thousands-commas |40,000 | Stripped commas, converted to Decimal Number
-| FactPatientVisits | Negative treatment/medication costs (sign-entry errors — costs only take 5 fixed tiers) | 6,715 / 9,904| Converted to absolute value
-| FactPatientVisits | TreatmentCost missing | 6,734 |	Left null — excluded automatically from SUM measures
-| FactPatientVisits | SatisfactionScore pinned at sentinel value 25 (scale is 1–10)| 5,631| Set to null (not recorded)
+|# ||Table | Issue | Rows Affected | Resoultion
+|---|---|---|---|---|
+|1| FactPatientVisits |2 exact duplicate rows (duplicate VisitID) | 2 | 	Removed, keep first
+|2|FactPatientVisits |VisitDate in 3 mixed formats: YYYY-MM-DD, MM-DD-YYYY, DD/MM/YYYY | 40,000 | Detected format by pattern, parsed to a single date type
+|3|FactPatientVisits |TreatmentCost / MedicationCost stored as text with thousands-commas |40,000 | Stripped commas, converted to Decimal Number
+|4|FactPatientVisits |Negative treatment/medication costs (sign-entry errors — costs only take 5 fixed tiers) | 6,715 / 9,904| Converted to absolute value
+|5|FactPatientVisits |TreatmentCost missing | 6,734 |	Left null — excluded automatically from SUM measures
+|6|FactPatientVisits |SatisfactionScore pinned at sentinel value 25 (scale is 1–10)| 5,631| Set to null (not recorded)
+|7|FactPatientVisits |WaitTimeMinutes pinned at sentinel value 1500| 7,940| Set to null (not recorded)
+|8|FactPatientVisits |LengthOfStay pinned at sentinel value 365)|6,692| Set to null (not recorded)
+|9|FactPatientVisits |Readmitted30Days inconsistent case ("Yes"/"YES"/"No")|~40,000|Standardized to Title Case
+|10|FactPatientVisits |InsuranceKey missing|1,941|Mapped to new "Not Recorded" member
+|11|DimDiagnosis |150 rows but only 18 real diagnoses (trailing-space duplicates, e.g. "Ulcer" vs "Ulcer  ")|132 duplicate rows|Trimmed, Title Cased, deduplicated; Fact table remapped to canonical keys
+|12|DimInsurance|20 rows but only 5 real providers (surrogate-key duplicates)|15 duplicate rows|Deduplicated to 5 + added "Not Recorded"; Fact table remapped
+|13|DimDiagnosis |150 rows but only 18 real diagnoses (trailing-space duplicates, e.g. "Ulcer" vs "Ulcer  ")|132 duplicate rows|Trimmed, Title Cased, deduplicated; Fact table remapped to canonical keys
 
 Full details, row counts, and the exact Power Query M code used for each fix are documented in [`docs/PowerBI_Build_Guide.md`](docs/PowerBI_Build_Guide.md).
 
