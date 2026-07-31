@@ -23,14 +23,6 @@ A healthcare group operating multiple hospitals had five years of raw operationa
 
 The raw dataset was deliberately messy 15+ distinct issues were identified and resolved in Power Query, including:
 
-- Dates stored in 3 different mixed formats across rows
-- Costs stored as text with thousands-separators and sign-entry errors (negative values)
-- Sentinel/placeholder values masking missing data (e.g. every unrecorded wait time defaulted to a fixed 1500 minutes)
-- Duplicate dimension records from trailing whitespace (150 raw diagnosis rows collapsed to 18 real diagnoses; 20 raw insurance rows collapsed to 5 real providers)
-- Inconsistent text casing across gender, Yes/No fields, and provider names
-
-
-## Data Quality & Cleaning
 |# |Table | Issue | Rows Affected | Resoultion
 |---|---|---|---|---|
 |1| FactPatientVisits |2 exact duplicate rows (duplicate VisitID) | 2 | 	Removed, keep first
@@ -49,7 +41,13 @@ The raw dataset was deliberately messy 15+ distinct issues were identified and r
 |14| DimDoctor |YearsExperience stored as text, includes word values ("Thirty")|100|Converted to whole number
 |15| DimDoctor |Specialty missing|10|Filled with "Unknown"
 
-Full details, row counts, and the exact Power Query M code used for each fix are documented in [`docs/PowerBI_Build_Guide.md`](docs/PowerBI_Build_Guide.md).
+## Power Query M Code (per query)
+- DimDiagnosis — trims, Title Cases, dedupes 150 rows down to 18 canonical diagnoses, regenerates surrogate key
+- DimInsurance — same pattern, dedupes 20 rows to 5 real providers, appends a "Not Recorded" member before re-indexing
+- DimDoctor — trims name, standardizes Gender casing, fills missing Specialty with "Unknown", converts word-numbers ("Thirty") to numeric YearsExperience
+- DimHospital / DimDepartment / DimPatientType — defensive trim only (these three were already clean)
+- FactPatientVisits — the full 6-step pipeline: dedupe on VisitID → parse the 3 mixed date formats by pattern → strip comma formatting and force costs positive → null out the three sentinel values (25 / 1500 / 365) → standardize Yes/No casing → fill missing InsuranceKey → remap DiagnosisKey/InsuranceKey to the regenerated dimension keys via a two-step merge
+
 
 ## Data Model
 
