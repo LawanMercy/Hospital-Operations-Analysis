@@ -29,7 +29,7 @@ The raw dataset was deliberately messy 15+ distinct issues were identified and r
 |2| FactPatientVisits |VisitDate in 3 mixed formats: YYYY-MM-DD, MM-DD-YYYY, DD/MM/YYYY | 40,000 | Detected format by pattern, parsed to a single date type
 |3| FactPatientVisits |TreatmentCost / MedicationCost stored as text with thousands-commas |40,000 | Stripped commas, converted to Decimal Number
 |4| FactPatientVisits |Negative treatment/medication costs (sign-entry errors — costs only take 5 fixed tiers) | 6,715 / 9,904| Converted to absolute value
-|5| FactPatientVisits |TreatmentCost missing | 6,734 |	Left null — excluded automatically from SUM measures
+|5| FactPatientVisits |TreatmentCost missing | 6,734 |	Left null is excluded automatically from SUM measures
 |6| FactPatientVisits |SatisfactionScore pinned at sentinel value 25 (scale is 1–10)| 5,631| Set to null (not recorded)
 |7| FactPatientVisits |WaitTimeMinutes pinned at sentinel value 1500| 7,940| Set to null (not recorded)
 |8| FactPatientVisits |LengthOfStay pinned at sentinel value 365)|6,692| Set to null (not recorded)
