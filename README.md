@@ -87,7 +87,7 @@ Full recommendations are in the presentation deck, click here to access it
 
 ## Tools Used
 
-`PostgreSQL`, `Power BI Desktop` , `Power Query (M)` , `DAX` , `Star Schema Modeling`, `Canva`,
+`PostgreSQL`, `Power BI Desktop` , `Power Query (M)` , `DAX` , `Star Schema Modeling`, `Canva`
 
 ## Author
 
