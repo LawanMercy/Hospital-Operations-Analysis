@@ -80,8 +80,8 @@ This page provides individual-physician-level performance data: revenue generate
 - **16–28% of key operational fields** (satisfaction score, wait time, length of stay, treatment cost) were not being captured at intake, previously hidden behind sentinel placeholder values rather than true nulls.
 - **Revenue is evenly distributed across the network** (8% spread top-to-bottom) no single hospital dominates or underperforms sharply, meaning growth opportunities lie in case-mix and service lines rather than fixing an underperforming site.
 - **Patient caseload is concentrated among a small group of top physicians**,worth a scheduling review to balance workload without sacrificing the revenue they generate.
-- **Doctor caseload is concentrated among top performers, but satisfaction scores stay tightly clustered (5.18–5.36) regardless of volume, high caseload isn't measurably hurting care quality
-- **Emergency visit rate sits at ~50% network-wide, and department-level emergency load is fairly even (48–52%), not concentrated in specific departments
+- **Doctor caseload is concentrated among top performers**, but satisfaction scores stay tightly clustered (5.18–5.36) regardless of volume, high caseload isn't measurably hurting care quality
+- **Emergency visit rate sits at ~50% network-wide**, and department-level emergency load is fairly even (48–52%), not concentrated in specific departments
 
 Full recommendations are in the presentation deck, click here to access it 
 
